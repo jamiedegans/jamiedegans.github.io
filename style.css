@@ -1,0 +1,26 @@
+
+
+.l{
+
+
+animation-duration:3s;
+animation:spin;
+}
+
+@keyframes backhround-move {
+0% {
+    background-position: 0%;
+}
+
+50%{
+    scale: 2;
+    transform: rotate(0);
+    border-radius: 50%;
+}
+
+100% {
+    transfrom: roate(360deg);
+    border-radius: 50%;
+    scale:2;
+}
+}
