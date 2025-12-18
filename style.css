@@ -227,7 +227,7 @@ main {
 .boxes-container {
   border-radius: 39px;
   gap: 18vh;
-padding-top: 5vh;
+  padding-top: 5vh;
 
   display: flex;
   align-content: center;
@@ -235,6 +235,32 @@ padding-top: 5vh;
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.boxes-design-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.boxes-design-container h2 {
+  color: white;
+
+}
+
+.boxes-design {
+  border-radius: 39px;
+  width: 18vh;
+  height: 18vh;
+
+  background-color: none;
+
+  display: flex;
+
+
+  margin-bottom: 3vh;
 }
 
 /*main about end*/
