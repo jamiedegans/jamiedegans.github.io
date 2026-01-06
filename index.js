@@ -11,10 +11,10 @@ let columns = Math.floor(canvas.width / fontSize);
 
 // 4 layers: back → front
 const layers = [
-  { speed: 1,  color: "rgba(150,0,30,0.25)", blur: 6 },  // back-back dark red
-  { speed: 2,  color: "rgba(255,0,60,0.6)", blur: 4 },   // back neon red
-  { speed: 2.5,color: "rgba(0,255,255,0.4)", blur: 2 },  // mid cyan
-  { speed: 3,  color: "rgba(150,255,255,0.9)", blur: 0 } // front less bright & fewer
+  { speed: 1, color: "rgba(150,0,30,0.25)", blur: 6 },  // back-back dark red
+  { speed: 2, color: "rgba(255,0,60,0.6)", blur: 4 },   // back neon red
+  { speed: 2.5, color: "rgba(0,255,255,0.4)", blur: 2 },  // mid cyan
+  { speed: 3, color: "rgba(150,255,255,0.9)", blur: 0 } // front less bright & fewer
 ];
 
 const drops = layers.map(() =>
@@ -75,7 +75,53 @@ window.addEventListener("resize", () => {
 
 
 //  new codes
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Get all skill items
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    // Create intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Find the skill bar inside this skill item
+                const skillBar = entry.target.querySelector('.skill-bar');
+                
+                // Start with 0 width
+                skillBar.style.width = '0%';
+                
+                // Get the target width from the style attribute
+                const targetWidth = skillBar.getAttribute('style').match(/width:\s*(\d+)%/)[1];
+                
+                // Animate to target width after a small delay
+                setTimeout(() => {
+                    skillBar.style.width = targetWidth + '%';
+                }, 100);
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% visible
+    });
+    
+    // Observe each skill item
+    skillItems.forEach(item => {
+        observer.observe(item);
+    });
+    
+});
 
+// ==================== HOVER EFFECTS ====================
+const skillItems = document.querySelectorAll('.skill-item');
+
+skillItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+    });
+});
 
 
 
