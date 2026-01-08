@@ -75,53 +75,55 @@ window.addEventListener("resize", () => {
 
 
 //  new codes
-document.addEventListener('DOMContentLoaded', function() {
-    
-    // Get all skill items
-    const skillItems = document.querySelectorAll('.skill-item');
-    
-    // Create intersection observer
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Find the skill bar inside this skill item
-                const skillBar = entry.target.querySelector('.skill-bar');
-                
-                // Start with 0 width
-                skillBar.style.width = '0%';
-                
-                // Get the target width from the style attribute
-                const targetWidth = skillBar.getAttribute('style').match(/width:\s*(\d+)%/)[1];
-                
-                // Animate to target width after a small delay
-                setTimeout(() => {
-                    skillBar.style.width = targetWidth + '%';
-                }, 100);
-            }
-        });
-    }, {
-        threshold: 0.5 // Trigger when 50% visible
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all skill items
+  const skillItems = document.querySelectorAll('.skill-item');
+
+  // Create intersection observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Find the skill bar inside this skill item
+        const skillBar = entry.target.querySelector('.skill-bar');
+
+        // Start with 0 width
+        skillBar.style.width = '0%';
+
+        // Get the target width from the style attribute
+        const targetWidth = skillBar.getAttribute('style').match(/width:\s*(\d+)%/)[1];
+
+        // Animate to target width after a small delay
+        setTimeout(() => {
+          skillBar.style.width = targetWidth + '%';
+        }, 100);
+      }
     });
-    
-    // Observe each skill item
-    skillItems.forEach(item => {
-        observer.observe(item);
-    });
-    
+  }, {
+    threshold: 0.5 // Trigger when 50% visible
+  });
+
+  // Observe each skill item
+  skillItems.forEach(item => {
+    observer.observe(item);
+  });
+
 });
 
-// ==================== HOVER EFFECTS ====================
+//HOVER EFFECTS
 const skillItems = document.querySelectorAll('.skill-item');
 
 skillItems.forEach(item => {
-    item.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.02)';
-    });
-    
-    item.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1)';
-    });
+  item.addEventListener('mouseenter', function () {
+    this.style.transform = 'scale(1.02)';
+  });
+
+  item.addEventListener('mouseleave', function () {
+    this.style.transform = 'scale(1)';
+  });
 });
+
+
 
 
 
