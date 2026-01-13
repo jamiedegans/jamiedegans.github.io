@@ -52,7 +52,7 @@ details summary::-moz-list-bullet {
   margin: 0;
   user-select: auto;
 
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 32px;
 }
 
@@ -577,7 +577,7 @@ main {
 .project-card-group-effect {
   display: flex;
   padding: 5vh;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .project-card-group-effect::-webkit-scrollbar {
@@ -588,12 +588,13 @@ main {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
 
-.project-card:hover ~ .project-card-group-container,
+.project-card:hover~.project-card-group-container,
 .project-card-group-container:hover {
   animation-play-state: paused;
 }
@@ -606,8 +607,8 @@ main {
   align-items: baseline;
   align-content: center;
   box-sizing: border-box;
-  width: max-content; 
-  animation: spin 10s linear infinite; 
+  width: max-content;
+  animation: spin 10s linear infinite;
   gap: 10vh;
 }
 
@@ -975,6 +976,57 @@ main {
 /*main projects end*/
 
 /*main contact*/
+
+.status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.status-text-container {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+
+  background: rgb(79 46 46 / 15%);
+  backdrop-filter: blur(5px) saturate(180%);
+  border-left: #00ffff 5px solid;
+
+  mask-image: linear-gradient(to right, transparent, #000, transparent);
+
+  height: 25vh;
+  width: 115vh;
+  font-size: 2vh;
+  padding: 19px;
+}
+
+.yellow{
+  color: #facc15;
+}
+
+.red{
+  color: #ef4444;
+}
+
+.green{
+  color: #22c55e;
+}
+
+.status  {
+  font-weight: 900;
+
+}
+
+
+
 
 /*main contact end*/
 
