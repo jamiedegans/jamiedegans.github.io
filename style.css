@@ -187,7 +187,7 @@ main {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-inline: 7px solid #3B82F6;
 
-
+text-decoration: none;
   color: inherit;
 }
 
@@ -973,6 +973,10 @@ main {
   justify-content: center;
 }
 
+.contact-box-button {
+text-decoration: none;
+}
+
 /*main projects end*/
 
 /*main contact*/
@@ -1025,6 +1029,17 @@ main {
 
 }
 
+.cards-container {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
 .contact-card {
   max-width: 500px;
   background-color: #111827;
@@ -1061,13 +1076,18 @@ main {
 .card-icon {
   width: 64px;
   height: 64px;
-  background-color: #000000;
+
   border: 2px solid;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
+
+.cards-container img {
+  width: 48px;
+  height: 48px;
+} 
 
 .email-card .card-icon {
   border-color: #00ffff;
@@ -1078,8 +1098,8 @@ main {
 }
 
 .icon-img {
-  width: 40px;
-  height: 40px;
+  width: 9vh;
+  height: 9vh;
   object-fit: contain;
 }
 
