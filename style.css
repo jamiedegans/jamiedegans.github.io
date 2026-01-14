@@ -1008,24 +1008,130 @@ main {
   padding: 19px;
 }
 
-.yellow{
+.yellow {
   color: #facc15;
 }
 
-.red{
+.red {
   color: #ef4444;
 }
 
-.green{
+.green {
   color: #22c55e;
 }
 
-.status  {
+.status {
   font-weight: 900;
 
 }
 
+.contact-card {
+  max-width: 500px;
+  background-color: #111827;
+  border: 4px solid;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  transform: rotate(-0.5deg);
+}
 
+.contact-card:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.email-card {
+  border-color: #00ffff;
+}
+
+.email-card:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.github-card {
+  border-color: #a855f7;
+}
+
+.github-card:hover {
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #000000;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.email-card .card-icon {
+  border-color: #00ffff;
+}
+
+.github-card .card-icon {
+  border-color: #a855f7;
+}
+
+.icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.card-info {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.email-card .card-info {
+  color: #00ffff;
+}
+
+.github-card .card-info {
+  color: #a855f7;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .contact-form-wrapper {
+    padding: 16px;
+  }
+}
 
 
 /*main contact end*/
