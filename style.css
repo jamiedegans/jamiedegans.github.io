@@ -11,6 +11,11 @@ body {
   padding: 0;
 }
 
+html {
+  font-size: clamp(14px, 1.5vw, 20px);
+}
+
+
 #matrix {
   position: fixed;
 
@@ -187,7 +192,7 @@ main {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-inline: 7px solid #3B82F6;
 
-text-decoration: none;
+  text-decoration: none;
   color: inherit;
 }
 
@@ -198,6 +203,38 @@ text-decoration: none;
 .sub-buttons-left h1 {
   color: black;
 
+}
+
+@media (max-width: 768px) {
+  .sub-buttons-right {
+    border-radius: 39px;
+    width: 24%;
+    height: 28%;
+
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: center;
+    justify-content: center;
+
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-inline: 5px solid #3B82F6;
+
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .sub-buttons-right h1 {
+    color: #3B82F6;
+    font-size: 3vh;
+  }
+
+  .sub-buttons-left h1 {
+    color: black;
+    font-size: 3vh;
+
+  }
 }
 
 /*main index end*/
@@ -944,11 +981,8 @@ text-decoration: none;
 }
 
 .contact-box-container {
-
   width: 90vh;
   height: 25vh;
-
-
 
   border: #16195A 5px solid;
 
@@ -974,7 +1008,7 @@ text-decoration: none;
 }
 
 .contact-box-button {
-text-decoration: none;
+  text-decoration: none;
 }
 
 /*main projects end*/
@@ -1087,7 +1121,7 @@ text-decoration: none;
 .cards-container img {
   width: 48px;
   height: 48px;
-} 
+}
 
 .email-card .card-icon {
   border-color: #00ffff;
