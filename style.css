@@ -543,7 +543,6 @@ main {
   --skill-width: 00%;
 }
 
-/* about ANIMATIONS*/
 @keyframes pulse {
 
   0%,
@@ -831,41 +830,27 @@ main {
 
 /*main projects*/
 
-.project-card-group-effect {
-  display: flex;
+.project-card-center-effect {
   padding: 5vh;
-  overflow: hidden;
-}
+  
+  
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 
-.project-card-group-effect::-webkit-scrollbar {
-  display: none;
-}
-
-@keyframes spin {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.project-card:hover~.project-card-group-container,
-.project-card-group-container:hover {
-  animation-play-state: paused;
 }
 
 .project-card-group-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  align-content: center;
-  box-sizing: border-box;
-  width: max-content;
-  animation: spin 10s linear infinite;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
   gap: 10vh;
 }
 
@@ -1230,6 +1215,8 @@ main {
 .contact-box-button {
   text-decoration: none;
 }
+
++
 
 /*main projects end*/
 
