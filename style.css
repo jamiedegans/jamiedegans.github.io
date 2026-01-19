@@ -4,7 +4,7 @@ body {
   font-size: 3vh;
 
   overflow: auto;
-
+background: #000;
   color: #ffffff;
 
   margin: 0;
@@ -29,6 +29,9 @@ html {
   filter: contrast(1.4) brightness(1.2);
 }
 
+a {
+  text-decoration: none;
+}
 /*header*/
 .images {
   width: 35px;
@@ -770,7 +773,7 @@ main {
   align-items: center;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
+  
   flex-direction: column;
 }
 
@@ -1214,6 +1217,57 @@ main {
 
 .contact-box-button {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .contact-box-title {
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+  }
+
+  .contact-box-container {
+    width: 90vw;
+    height: 25vh;
+
+    border: #16195A 5px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 10vh;
+  }
+
+  .contact-box-description {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    background: #a855f7;
+    height: 8vh;
+    width: 60vw;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-box-button {
+    text-decoration: none;
+    font-size: 2.5vh;
+  }
 }
 /*main projects end*/
 
