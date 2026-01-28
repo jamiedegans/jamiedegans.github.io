@@ -193,7 +193,6 @@ main {
     border-radius: 39px;
     width: 24%;
     height: 28%;
-
     display: flex;
     align-content: center;
     align-items: flex-end;
@@ -1221,7 +1220,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
