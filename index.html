@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <div class="border">
             <div class="header-beam">
                 <details>
                     <summary>
-                        <h1 class="summary-button">☰</h1>
+                        <div class="summary-button">☰</div>
                     </summary>
                     <nav>
                         <ul>
@@ -24,25 +23,25 @@
                                 <a href="index.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/home-9-fill.png" alt="home">
                                 </a>
-                                <h2>Home</h2>
+                                <span>Home</span>
                             </li>
                             <li class="header-links-buttons-container">
                                 <a href="about.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/user-fill.png" alt="about">
                                 </a>
-                                <h2>Over mij</h2>
+                                <span>Over mij</span>
                             </li>
                             <li class="header-links-buttons-container">
                                 <a href="projects.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/book-shelf-fill.png" alt="projects">
                                 </a>
-                                <h2>Mijn projecten</h2>
+                                <span>Mijn projecten</span>
                             </li>
                             <li class="header-links-buttons-container">
                                 <a href="contact.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/free-envelope-icon-.png" alt="contact">
                                 </a>
-                                <h2>Contact</h2>
+                                <span>Contact</span>
                             </li>
                         </ul>
                     </nav>
@@ -53,36 +52,35 @@
 
     <main>
         <canvas id="matrix"></canvas>
-
+        <script src="js/index.js"></script>
+F
         <div class="main-text-container">
             <h1>Hoi ik ben Jamairo</h1>
             <div class="beam"></div>
         </div>
 
         <div class="main-text-container">
-            <h1>BEGINNER DEVELOPER</h1>
+            <h2>BEGINNER DEVELOPER</h2>
             <p>Ik wil een software developer worden ik leer hiervoor om beter de worden</p>
         </div>
-
         <div class="sub-buttons-container">
             <a href="projects.html" class="sub-buttons-left">
-                <p>Mijn werk</p>
+                Mijn werk
             </a>
             <a href="contact.html" class="sub-buttons-right">
-                <p>Contact mij</p>
+                Contact mij
             </a>
         </div>
     </main>
     <footer>
         <div class="background-footer">
             <div class="footer-text-container">
-                <h1 class="footer-text">© 2025 Jamairo Werleman.</h1>
-                <p> All rights reserved.</p>
+                <p class="footer-text">© 2025 Jamairo Werleman. <br> All rights reserved.</p>
             </div>
 
         </div>
     </footer>
-    <script src="js\index.js"></script>
+
 </body>
 
 </html>

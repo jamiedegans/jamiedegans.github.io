@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
 </head>
@@ -19,7 +19,7 @@
             <div class="header-beam">
                 <details>
                     <summary>
-                        <h1 class="summary-button">☰</h1>
+                        <span class="summary-button">☰</span>
                     </summary>
                     <nav>
                         <ul>
@@ -27,25 +27,25 @@
                                 <a href="index.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/home-9-fill.png" alt="home">
                                 </a>
-                                <h2>Home</h2>
+                                <span>Home</span>
                             </li>
                             <li class="header-links-buttons-container">
                                 <a href="about.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/user-fill.png" alt="about">
                                 </a>
-                                <h2>Over mij</h2>
+                                <span>Over mij</span>
                             </li>
                             <li class="header-links-buttons-container">
                                 <a href="projects.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/book-shelf-fill.png" alt="projects">
                                 </a>
-                                <h2>Mijn projecten</h2>
+                                <span>Mijn projecten</span>
                             </li>
                             <li class="header-links-buttons-container">
                                 <a href="contact.html" class="header-Links-Buttons">
                                     <img class="images" src="images/icons/free-envelope-icon-.png" alt="contact">
                                 </a>
-                                <h2>Contact</h2>
+                                <span>Contact</span>
                             </li>
                         </ul>
                     </nav>
@@ -56,13 +56,13 @@
     <main>
 
         <canvas id="matrix"></canvas>
-        <script src="js\index.js"></script>
+        <script src="js/index.js"></script>
 
         <div class="status-container">
             <div class="status-text-container">
-                <h2><span class="red">> STATUS:</span> Bereikbaar</h2>
-                <h2><span class="yellow">> LOCATIE:</span> Nederland</h2>
-                <h2><span class="green">> ANTWOORDTIJD:</span> 184UUR</h2>
+                <div><span class="red">> STATUS:</span> Bereikbaar</div>
+                <div><span class="yellow">> LOCATIE:</span> Nederland</div>
+                <div><span class="green">> ANTWOORDTIJD:</span> 184UUR</div>
             </div>
 
         </div>
@@ -73,8 +73,8 @@
                     <img class="icon-img" src="images/icons/free-envelope-icon-.png" alt="Email">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">EMAIL</h3>
-                    <p class="card-info">@email</p>
+                    <h1 class="card-title">EMAIL</h1>
+                    <div class="card-info">@email</div>
                     <p class="card-description"></p>
                 </div>
             </a>
@@ -88,8 +88,8 @@
                     </svg>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">GITHUB</h3>
-                    <p class="card-info">@jamiedegans</p>
+                    <h1 class="card-title">GITHUB</h1>
+                    <div class="card-info">@jamiedegans</div>
                     <p class="card-description">Bekijk mijn code en projecten.
                     </p>
                 </div>
@@ -101,9 +101,9 @@
     <footer>
         <div class="background-footer">
             <div class="footer-text-container">
-                <h2 class="footer-text">© 2025 Jamairo Werleman.</h2>
-                <h2> All rights reserved.</h2>
+                <p class="footer-text">© 2025 Jamairo Werleman. <br> All rights reserved.</p>
             </div>
+
         </div>
     </footer>
 
