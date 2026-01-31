@@ -340,12 +340,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 80%;
     max-width: 200px;
     min-height: 150px;
     padding: 20px;
-
     border-width: 5px;
     border-style: solid;
   }
