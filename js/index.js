@@ -72,6 +72,7 @@ window.addEventListener("resize", () => {
 });
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const skillItems = document.querySelectorAll('.skill-item');
