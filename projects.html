@@ -57,6 +57,7 @@
     <main>
         <canvas id="matrix"></canvas>
         <script src="js/index.js"></script>
+          <script src="js/cards.js" defer></script>
 
         <div class="status-container">
             <div class="status-text-container">
@@ -70,137 +71,42 @@
 
 
                 <!-- card 1 -->
-                <div class="project-card">
-                    <div class="status-badge live">Online</div>
-                    <div class="project-image">
-                        <img src="images/pics/mastermind.png" alt="image mastermind">
-                        <div class="image-overlay"></div>
-                        <div class="hover-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">
-                            <p>// Spel</p>
-                        </div>
-                        <h2 class="project-title">Mastermind</h2>
-                        <p class="project-description">Een spel dat ik maakte om de basis van programmeren te
-                            leren.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">JAVA</span>
-                        </div>
-                        <div class="project-actions">
-                            <a class="btn-view" href="https://github.com/jamiedegans/Mastermind" target="_blank">
-                                ZIE PROJECT
-                            </a>
-                            <a class="btn-github" href="https://github.com/jamiedegans/Mastermind" target="_blank">
-                                <svg class="github-cat" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="corner-accent"></div>
-                </div>
+                 <project-card project-status="Online" 
+                 project-image="images/pics/mastermind.png"
+                 project-type="Spel" 
+                 project-title="Mastermind" 
+                 project-description="Een spel dat ik maakte om de basis van programmeren te leren." 
+                 project-languages="JAVA" 
+                 github-link="https://github.com/jamiedegans/Mastermind">
+                </project-card>
 
-                <!-- card 2 -->
-                <div class="project-card">
-                    <div class="status-badge live">Offline</div>
-                    <div class="project-image">
-                        <img src="images/pics/Monochrome_Offline.webp" alt="Offline image">
-                        <div class="image-overlay"></div>
-                        <div class="hover-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">// Spel</div>
-                        <h2 class="project-title">Magic</h2>
-                        <p class="project-description">Een spel dat ik aan het maken ben is nog niet online</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">JAVA</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/jamiedegans/opdrachten" class="btn-view" target="_blank">
-                                ZIE PROJECT
-                            </a>
-                            <a href="https://github.com/jamiedegans/opdrachten" class="btn-github" target="_blank">
-                                <svg class="github-cat" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="corner-accent"></div>
-                </div>
+                <project-card project-status="Online" 
+                 project-type="Spel" 
+                 project-image="images/pics/pinkgoose.png"
+                 project-title="Pinkgoose" 
+                 project-description="mijn eerste website die ik maakte om de basis van programmeren te leren." 
+                 project-languages="HTML, CSS" 
+                 github-link="https://github.com/jamiedegans/website-locatie">    
+                </project-card>
 
-                <!-- card 3 -->
-                <div class="project-card">
-                    <div class="status-badge live">Online</div>
-                    <div class="project-image">
-                        <img src="images/pics/pinkgoose.png" alt="Project Name">
-                        <div class="image-overlay"></div>
-                        <div class="hover-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">// Website</div>
-                        <h2 class="project-title">Pinkgoose</h2>
-                        <p class="project-description">Een website die ik maakte om de basis van webdesign te
-                            leren met HTML en CSS.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/jamiedegans/website-locatie" class="btn-view" target="_blank">
-                                ZIE PROJECT
-                            </a>
-                            <a href="https://github.com/jamiedegans/website-locatie" class="btn-github" target="_blank">
-                                <svg class="github-cat" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="corner-accent"></div>
-                </div>
+                <project-card project-status="Online" 
+                    project-image="images/pics/ovchipkaart.png"
+                 project-type="programmeer project" 
+                 project-title="ov chipkaart systeem" 
+                 project-description="ik had het over de ov systeem nagemaakt en de basis van object georiënteerd programmeren." 
+                 project-languages="JAVA" 
+                 github-link="https://github.com/jamiedegans/ovchipkaart">
+                </project-card>
 
-                <!-- card 4 -->
-                <div class="project-card">
-                    <div class="status-badge live">Online</div>
-                    <div class="project-image">
-                        <img src="images/pics/portfolio.png" alt="Project Name">
-                        <div class="image-overlay"></div>
-                        <div class="hover-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">
-                            <p>// Website</p>
-                        </div>
-                        <h2 class="project-title">My portolio website</h2>
-                        <p class="project-description">Een website die ik maakte als portfolio om
-                            softwareontwikkeling en JavaScript te leren.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/jamiedegans/jamiedegans.github.io" class="btn-view"
-                                target="_blank">
-                                ZIE PROJECT
-                            </a>
-                            <a href="https://github.com/jamiedegans/jamiedegans.github.io" class="btn-github"
-                                target="_blank">
-                                <svg class="github-cat" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="corner-accent"></div>
-                </div>
-                <!-- card 5 -->
+               
+                <project-card project-status="Online" 
+                 project-image="images/pics/logo.png"
+                 project-type="Website" 
+                 project-title="The High" 
+                 project-description="Een website die ik maakte om de basis van website applicaties te leren." 
+                 project-languages="PHP, HTML, CSS, JS" 
+                 github-link="https://github.com/jamiedegans/website-The-High">
+                  </project-card>
             </div>
         </div>
 

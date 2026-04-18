@@ -470,11 +470,11 @@ main {
 
 
 .w-19 {
-  --skill-width: 19%;
+  --skill-width: 45%;
 }
 
 .w-68 {
-  --skill-width: 68%;
+  --skill-width: 70%;
 }
 
 .w-50 {
@@ -486,11 +486,11 @@ main {
 }
 
 .w-34 {
-  --skill-width: 34%;
+  --skill-width: 45%;
 }
 
 .w-75 {
-  --skill-width: 00%;
+  --skill-width: 29%;
 }
 
 @keyframes pulse {
